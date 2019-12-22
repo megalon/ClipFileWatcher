@@ -1,0 +1,17 @@
+﻿<Window x:Class="ClipFileWatcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClipFileWatcher"
+        mc:Ignorable="d"
+        Title="Clip File Watcher" Height="247" Width="468">
+    <Grid>
+        <Button x:Name="Button_PathToWatch" Content="Select .clip file" HorizontalAlignment="Center" Margin="10,43,10,0" VerticalAlignment="Top" Height="46" Width="440" Click="Button_PathToWatch_Click"/>
+        <ScrollViewer x:Name="ScrollViewer_LogScroller" Margin="10,94,10,10">
+            <TextBox x:Name="TextBox_FileChangeEvents" Text="Event log:" TextWrapping="Wrap" TextChanged="TextBox_FileChangeEvents_TextChanged"/>
+        </ScrollViewer>
+        <Label x:Name="Label_FilePath" Content="No .clip file selected!" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
+
